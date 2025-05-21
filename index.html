@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lorenzo Miguel Valeda – Game Designer</title>
+  <style>
+    /* === Base reset & typography === */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
+    body {
+      background: #0c0c0c;
+      color: #e0e0e0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:hover { opacity: 0.8; }
+
+    /* === Container widths === */
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    /* === Header / Hero === */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .header-left h1 {
+      font-size: 2.25rem;
+      color: #ffffff;
+    }
+    .header-left p {
+      font-size: 1rem;
+      color: #ffffff;
+    }
+    .social-links {
+      display: flex;
+      gap: 1rem;
+    }
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.2rem;
+      height: 2.2rem;
+      border: 2px solid #ffffff;
+      border-radius: 4px;
+      color: #ffffff;
+      font-size: 1.2rem;
+    }
+    .btn-resume {
+      margin-left: 1rem;
+      padding: 0.5rem 1rem;
+      border: 2px solid #ffffff;
+      border-radius: 4px;
+      color: #e0a1a8;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    /* === Hero Section === */
+    .hero {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 4rem;
+    }
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 0;
+      border: 3px solid #ffffff;
+      object-fit: cover;
+    }
+    .hero-text {
+      font-size: 1.1rem;
+      max-width: 600px;
+      color: #ffffff;
+    }
+
+    /* === Projects Grid === */
+    section.projects h2 {
+      font-size: 1.75rem;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .project-item img {
+      width: 100%;
+      display: block;
+    }
+    .project-item .overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 0.75rem;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    /* === Footer === */
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #555;
+      padding: 2rem 0 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="header-left">
+        <h1>Lorenzo Miguel Valeda</h1>
+        <p>Game Designer &amp; Developer</p>
+      </div>
+      <div class="header-right">
+        <nav class="social-links">
+          <a href="https://github.com/SleepyNecrox" target="_blank"><img src="C:\Users\User\Desktop\Website Portfolio\Images\github.png" style="width:42px;height:42px;"></a>
+          <a href="https://sleepynecrox.itch.io/" target="_blank"><img src="C:\Users\User\Desktop\Website Portfolio\Images\itch.svg" style="width:42px;height:42px;"> </a>
+          <a href="https://www.facebook.com/lorenzo.valeda" target="_blank"><img src="C:\Users\User\Desktop\Website Portfolio\Images\facebook.png" style="width:42px;height:42px;"> </a>
+
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img src="C:\Users\User\Desktop\Website Portfolio\Images\Picture.jpg">
+      <p class="hero-text">
+        Game designer specializing in gameplay systems, level design, and content design. 
+        I love designing systems, prototyping new mechanics, and creating fun experiences for players.
+      </p>
+    </section>
+
+    <section class="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <a href="https://github.com/SleepyNecrox/UW-THESIS" class="project-item" target="_blank">
+          <img src="https://i.imgur.com/bNH0jLA.gif" alt="Project 1 Gameplay ">
+          <div class="overlay">Marine Watch (Ongoing) – Unity / 6 Devs</div>
+        </a>
+        <!-- Project 2 -->
+        <a href="https://sleepynecrox.itch.io/ant-colony-defense" class="project-item" target="_blank">
+          <img src="https://i.imgur.com/Afc3nhu.gif" alt="Project 2 Gameplay ">
+          <div class="overlay">Ant Colony Defense (2024) – Unity / 5 Devs</div>
+        </a>
+        <!-- Project 3 -->
+        <a href="https://sleepynecrox.itch.io/shadows-of-the-plague" class="project-item" target="_blank">
+          <img src="https://i.imgur.com/BwKVNtN.gif" alt="Project 3 Gameplay ">
+          <div class="overlay">Shadows of The Plague (2024) – Unity / Solo</div>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Lorenzo Miguel Valeda
+  </footer>
+
+</body>
+</html>
