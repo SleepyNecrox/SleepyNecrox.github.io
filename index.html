@@ -197,6 +197,62 @@
       text-align: center;
     }
 
+    /* Mobile (max width 768px) */
+    @media (max-width: 768px) {
+      /* Header layout */
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+      }
+    
+      .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      /* Hero section */
+      .hero {
+        grid-template-columns: 1fr; /* Stack image above text */
+        text-align: center;
+      }
+      .hero img {
+        margin: 0 auto;
+      }
+    
+      /* Projects grid */
+      .projects-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+      }
+    
+      /* Skills section */
+      .projects-grid nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+      .projects-grid img {
+        width: 48px;
+        height: 48px;
+      }
+    
+      /* Art Showcase grid */
+      .art-grid {
+        grid-template-columns: 1fr; /* One image per row */
+      }
+      .art-grid img {
+        height: auto; /* Keep proportions */
+      }
+    
+      /* About me/footer text */
+      .about-me p {
+        text-align: left;
+        font-size: 0.95rem;
+      }
+    }
+
+
   </style>
 </head>
 <body>
@@ -363,6 +419,7 @@
 
 </body>
 </html>
+
 
 
 
