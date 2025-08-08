@@ -119,12 +119,60 @@
       text-align: center;
     }
 
+      /* === Skills Showcase === */
     .skills h2{
       margin-top: 1.5rem;
       font-size: 1.75rem;
       color: #ffffff;
       margin-bottom: 1.5rem;
     }
+
+    /* === Art Showcase === */
+    .art-showcase h2 {
+      font-size: 1.75rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+    
+    .art-buttons {
+      margin-bottom: 1rem;
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .art-buttons button {
+      background: #222;
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.2s ease;
+    }
+    
+    .art-buttons button:hover {
+      background: #444;
+    }
+    
+    .art-buttons button.active {
+      background: #fff;
+      color: #000;
+    }
+    
+    .art-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    
+    .art-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
 
     /* === Footer === */
     footer {
@@ -216,6 +264,78 @@
         </nav>
       </div>
     </header>
+
+    <!-- === Art Showcase Section === -->
+    <section class="art-showcase">
+      <h2>Art Showcase</h2>
+    
+      <!-- Buttons -->
+      <div class="art-buttons">
+        <button data-category="concept">Concept Art</button>
+        <button data-category="2d">2D Art</button>
+        <button data-category="3d">3D Art</button>
+      </div>
+    
+      <!-- Images Container -->
+      <div class="art-grid">
+        <!-- Images will be inserted by JavaScript -->
+      </div>
+    </section>
+    
+    <script>
+
+      const artData = {
+        "concept": [
+          "https://imgur.com/KKwOS2F.png",
+          "https://imgur.com/1xzTKaL.png",
+          "https://imgur.com/4RJrura.png",
+          "https://imgur.com/3jt9Dse.png",
+          "https://imgur.com/btKPvXt.png",
+          "https://imgur.com/RXUXfwq.png",
+          "https://imgur.com/5epbidh.png",
+          "https://imgur.com/3QQbmUF.png",
+          "https://imgur.com/PF847Mh.png",
+          "https://imgur.com/s2BMPb4.png"
+        ],
+        "2d": [
+          "https://imgur.com/bSS851V.png",
+          "https://imgur.com/DvXmAC2.png",
+          "https://imgur.com/Ok3T1JN.png",
+          "https://i.imgur.com/OcWvC3i.gif",
+          "https://i.imgur.com/sPfzGMC.gif",
+          "https://i.imgur.com/hACb4uD.gif"
+          
+        ],
+        "3d": [
+          "https://imgur.com/IuVvnU6.png",
+          "https://i.imgur.com/4FcXQtr.png",
+          "https://imgur.com/hCzb3lj.png"
+        ]
+      };
+    
+      const artGrid = document.querySelector(".art-grid");
+      const buttons = document.querySelectorAll(".art-buttons button");
+    
+      function loadArt(category) {
+        artGrid.innerHTML = "";
+        artData[category].forEach(src => {
+          const img = document.createElement("img");
+          img.src = src;
+          img.alt = category + " art";
+          artGrid.appendChild(img);
+        });
+      }
+    
+      loadArt("concept");
+    
+      buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          buttons.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          loadArt(btn.dataset.category);
+        });
+      });
+    </script>
   </div>
 
   <footer>
@@ -224,6 +344,7 @@
 
 </body>
 </html>
+
 
 
 
