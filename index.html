@@ -222,7 +222,7 @@
       gap: 1rem;
     }
     
-    .art-buttons button {
+/*     .art-buttons button {
       background: #222;
       color: #fff;
       border: 2px solid #fff;
@@ -233,20 +233,18 @@
       transition: background 0.2s ease;
     }
     
-    .art-buttons button:hover {
-      background: #444;
-    }
-    
-    .art-buttons button.active {
-      background: #fff;
-      color: #000;
-    }
-    
-    .art-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-    }
+    .art-buttons {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+  } */
+  
+  .art-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
     
     .art-grid img {
       width: 100%;
@@ -506,20 +504,22 @@
 
     <!-- === Art Showcase Section === -->
     <section class="art-showcase">
-      <h2>Art Showcase</h2>
-    
+    <h2>Art Showcase</h2>
+  
+    <div class="tab-content">
       <!-- Buttons -->
       <div class="art-buttons">
-        <button data-category="concept">Concept Art</button>
-        <button data-category="2d">2D Art</button>
-        <button data-category="3d">3D Art</button>
+      <button class="tab-button active" data-category="concept">Concept Art</button>
+      <button class="tab-button" data-category="2d">2D Art</button>
+      <button class="tab-button" data-category="3d">3D Art</button>
       </div>
-    
+
+  
       <!-- Images Container -->
-      <div class="art-grid">
-        <!-- Images will be inserted by JavaScript -->
-      </div>
-    </section>
+      <div class="art-grid"></div>
+    </div>
+  </section>
+
     
     <script>
 
@@ -603,6 +603,7 @@
 
 </body>
 </html>
+
 
 
 
