@@ -129,6 +129,85 @@
       margin-bottom: 1rem;
     }
 
+    .work-education-section {
+      margin-top: 5rem;
+    }
+
+    .tabs {
+      display: flex;
+      background: #111;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .tab-button {
+      flex: 1;
+      padding: 0.75rem;
+      background: #111;
+      border: none;
+      color: #999;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .tab-button.active {
+      background: #1c1c1c;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .tab-content {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 1.5rem;
+      color: #eee;
+    }
+
+    .card {
+      border: 1px solid #333;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      background: #0f0f0f;
+    }
+
+    .card-header {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .card-header img {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
+    .card ul {
+      margin-top: 0.75rem;
+      padding-left: 1.25rem;
+    }
+
+    .card ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .badges span {
+      display: inline-block;
+      background: #222;
+      border: 1px solid #555;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+    }
+
+
     /* === Art Showcase === */
     .art-showcase h2 {
       margin-top: 5rem;
@@ -340,6 +419,91 @@
       </div>
     </header>
 
+    <section class="work-education-section">
+  <h2 style="color: #fff; margin-bottom: 1rem;">Experience</h2>
+
+  <div class="tabs">
+    <button class="tab-button active" data-tab="education">Education</button>
+    <button class="tab-button" data-tab="work">Work</button>
+  </div>
+
+  <!-- === EDUCATION === -->
+  <div class="tab-content" id="education">
+    <div class="card">
+      <div class="card-header">
+        <img src="https://i.imgur.com/utx7hrJ.jpeg" alt="iACADEMY Logo" />
+        <div>
+          <strong>iACADEMY Makati</strong><br />
+          <span>BS in Entertainment and Multimedia Computing, Specialization in Game Development</span>
+          <p>2022 – Present</p>
+        </div>
+      </div>
+      <ul>
+        <li>Cumulative GWA of 1.475 (Equivalent to 3.76 GPA)</li>
+        <li>Varsity LoL player and team captain for Elix Esports</li>
+      </ul>
+       <div class="badges">
+        <span>🎓 7x Dean's Lister</span>
+      </div> 
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <img src="https://i.imgur.com/PMUlJ82.jpeg" alt="Lourdes Logo" />
+        <div>
+          <strong>Lourdes School of Mandaluyong</strong><br />
+          <span>High School Diploma</span>
+          <p>2017 – 2022</p>
+        </div>
+      </div>
+        <ul>
+          <li>Graduated with High Honors</li>
+          <li>Overall Final Grade Average of 92.57</li>
+        </ul>
+    </div>
+  </div>
+
+  <!-- === WORK === -->
+  <div class="tab-content" id="work" style="display: none;">
+    <div class="card">
+      <div class="card-header">
+        <img src="https://i.imgur.com/RY4YB7i.png" alt="YYM Logo" />
+        <div>
+          <strong>Yangyang Mobile</strong><br />
+          <span>Game Designer/QA Intern</span>
+          <p>Sep 2025 - Present</p>
+        </div>
+      </div>
+      <!--<ul>
+        <li>Lorem Ipsum</li>
+        <li>Lorem Ipsum</li>
+        <li>Lorem Ipsum</li>
+      </ul>
+      <div class="badges">
+        <span>🎮 Badge1</span>
+        <span>🛠 Badge2</span>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab-button');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.style.display = 'none');
+
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).style.display = 'block';
+      });
+    });
+  </script>
+
+
+
     <!-- === Art Showcase Section === -->
     <section class="art-showcase">
       <h2>Art Showcase</h2>
@@ -439,86 +603,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
