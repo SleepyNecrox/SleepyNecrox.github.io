@@ -79,7 +79,7 @@
     .hero img {
       width: 150px;
       height: 150px;
-      border-radius: 10;
+      border-radius: 10px;
       border: 3px solid #ffffff;
       object-fit: cover;
     }
@@ -88,6 +88,20 @@
       max-width: 700px;
       color: #ffffff;
     }
+
+    /* Hover animations for icons */
+    .social-links a img,
+    .skills .projects-grid img {
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .social-links a img:hover,
+    .skills .projects-grid img:hover {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+    }
+
+
 
     /* === Projects Grid === */
     section.projects h2 {
@@ -604,16 +618,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
