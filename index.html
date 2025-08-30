@@ -328,19 +328,28 @@
       }
 
       .project-item {
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        border: 1px solid #333;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #111;
       }
-
+    
       .project-item img {
         width: 100%;
         height: auto;
         display: block;
+        border-radius: 0;
       }
-
+    
       .project-item .overlay {
         font-size: 1rem;
-        padding: 0.5rem;
+        padding: 0.75rem;
+        background: rgba(0, 0, 0, 0.85);
+        text-align: center;
+        color: #fff;
       }
     
       /* Skills section */
@@ -645,5 +654,6 @@
 
 </body>
 </html>
+
 
 
