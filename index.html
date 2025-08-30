@@ -230,7 +230,7 @@
     }
 
     strong {
-      font-size: 1.2rem; /
+      font-size: 1.2rem; 
     }
 
     /* === Art Showcase === */
@@ -258,10 +258,6 @@
       transition: background 0.2s ease;
     }
     
-    .art-buttons {
-    margin-bottom: 1.5rem;
-    display: flex;
-    gap: 1rem;
   } */
   
   .art-grid {
@@ -319,7 +315,7 @@
     
       /* Hero section */
       .hero {
-        grid-template-columns: 1fr; /* Stack image above text */
+        grid-template-columns: 1fr; 
         text-align: center;
       }
       .hero img {
@@ -328,7 +324,23 @@
     
       /* Projects grid */
       .projects-grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-columns: 1fr;
+      }
+
+      .project-item {
+        display: block;
+        width: 100%;
+      }
+
+      .project-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .project-item .overlay {
+        font-size: 1rem;
+        padding: 0.5rem;
       }
     
       /* Skills section */
@@ -344,10 +356,10 @@
     
       /* Art Showcase grid */
       .art-grid {
-        grid-template-columns: 1fr; /* One image per row */
+        grid-template-columns: 1fr;
       }
       .art-grid img {
-        height: auto; /* Keep proportions */
+        height: auto; 
       }
     
       /* About me/footer text */
@@ -369,10 +381,10 @@
       </div>
       <div class="header-right">
         <nav class="social-links">
-          <a href="Valeda, Lorenzo Miguel_Resume.pdf" download target="_blank"><img src="https://i.imgur.com/e08eXc7.png" style="width:42px;height:42px;"> </a>
-          <a href="https://github.com/SleepyNecrox" target="_blank"><img src="https://i.imgur.com/foTfjSi.png" style="width:42px;height:42px;"></a>
-          <a href="https://sleepynecrox.itch.io/" target="_blank"><img src="https://i.imgur.com/XJgKjR3.png" style="width:42px;height:42px;"> </a>
-          <a href="https://www.linkedin.com/in/lorenzo-miguel-valeda-740baa379/" target="_blank"><img src="https://i.imgur.com/Vyg6TmU.png" style="width:42px;height:42px;"> </a>
+          <a href="Valeda, Lorenzo Miguel_Resume.pdf" download target="_blank"><img src="https://i.imgur.com/e08eXc7.png" style="width:42px;height:42px;" loading="lazy"> </a>
+          <a href="https://github.com/SleepyNecrox" target="_blank"><img src="https://i.imgur.com/foTfjSi.png" style="width:42px;height:42px;" loading="lazy"></a>
+          <a href="https://sleepynecrox.itch.io/" target="_blank"><img src="https://i.imgur.com/XJgKjR3.png" style="width:42px;height:42px;" loading="lazy"> </a>
+          <a href="https://www.linkedin.com/in/lorenzo-miguel-valeda-740baa379/" target="_blank"><img src="https://i.imgur.com/Vyg6TmU.png" style="width:42px;height:42px;" loading="lazy"> </a>
         </nav>
       </div>
     </header>
@@ -389,32 +401,32 @@
       <div class="projects-grid">
         <!-- Project 1 -->
         <a href="https://sleepynecrox.itch.io/marine-watch?secret=I2r7XKhKU8GdCTnpfEpdUvpOA8" class="project-item" target="_blank">
-          <img src="https://i.imgur.com/s9FTf3l.gif" alt="Project 1 Gameplay ">
+          <img src="https://i.imgur.com/s9FTf3l.gif" alt="Project 1 Gameplay" loading="lazy">
           <div class="overlay">Marine Watch (Ongoing) – 6 Devs</div>
         </a>
         <!-- Project 2 -->
         <a href="https://sleepynecrox.itch.io/hinari-the-nine-tailed-fox" class="project-item" target="_blank">
-          <img src="https://i.imgur.com/m6dlIjB.gif" alt="Project 2 Gameplay ">
+          <img src="https://i.imgur.com/m6dlIjB.gif" alt="Project 2 Gameplay" loading="lazy">
           <div class="overlay">Hinari The Nine Tailed Fox (2025) – 2 Devs</div>
         </a>
         <!-- Project 3 -->
         <a class="project-item" target="_blank">
-          <img src="https://i.imgur.com/guqDQie.gif" alt="Project 3 Gameplay ">
+          <img src="https://i.imgur.com/guqDQie.gif" alt="Project 3 Gameplay" loading="lazy">
           <div class="overlay">Take Us Home, Bobby (2025) – 6 Devs</div>
         </a>
         <!-- Project 4 -->
         <a href="https://sleepynecrox.itch.io/mitsus-cat-cafe" class="project-item" target="_blank">
-          <img src="https://i.imgur.com/uBp1PFW.gif" alt="Project 4 Gameplay ">
+          <img src="https://i.imgur.com/uBp1PFW.gif" alt="Project 4 Gameplay" loading="lazy">
           <div class="overlay">Mitsu's Cat Cafe (2025) – Solo</div>
         </a>
         <!-- Project 5 -->
         <a href="https://sleepynecrox.itch.io/ant-colony-defense" class="project-item" target="_blank">
-          <img src="https://i.imgur.com/Afc3nhu.gif" alt="Project 5 Gameplay ">
+          <img src="https://i.imgur.com/Afc3nhu.gif" alt="Project 5 Gameplay" loading="lazy">
           <div class="overlay">Ant Colony Defense (2024) – 5 Devs</div>
         </a>
         <!-- Project 6 -->
         <a href="https://sleepynecrox.itch.io/shadows-of-the-plague" class="project-item" target="_blank">
-          <img src="https://i.imgur.com/BwKVNtN.gif" alt="Project 6 Gameplay ">
+          <img src="https://i.imgur.com/BwKVNtN.gif" alt="Project 6 Gameplay" loading="lazy">
           <div class="overlay">Shadows of The Plague (2024) – Solo</div>
         </a>
       </div>
@@ -424,18 +436,18 @@
     <h2>Technical Skills</h2>
       <div class="projects-grid">
         <nav class="social-links">
-          <img src="https://i.imgur.com/EU4IwLE.png" style="width:64px;height:64px;"></a> <!-- Unity -->
-          <img src="https://i.imgur.com/R9I1SYU.png" style="width:64px;height:64px;"> </a> <!-- VSC -->
-          <img src="https://i.imgur.com/S7u7AZ7.png" style="width:64px;height:64px;"> </a> <!-- C# -->
-          <img src="https://imgur.com/vNSnBx7.png" style="width:64px;height:64px;"> </a> <!-- Github -->
-          <img src="https://i.imgur.com/pThdt3V.png" style="width:64px;height:64px;"> </a> <!-- Maya -->
-          <img src="https://i.imgur.com/NisrTpG.png" style="width:64px;height:64px;"> </a> <!-- SP -->
-          <img src="https://i.imgur.com/Te1XlLY.png" style="width:64px;height:64px;"> </a> <!-- ZBrush -->
-          <img src="https://i.imgur.com/SnQyzv0.png" style="width:64px;height:64px;"> </a> <!-- PhotoShop -->
-          <img src="https://i.imgur.com/wNZZLRz.png" style="width:64px;height:64px;"> </a> <!-- Premiere Pro -->
-          <img src="https://i.imgur.com/7JtX78k.png" style="width:64px;height:64px;"> </a> <!-- FL Studio -->
-          <img src="https://imgur.com/S64uTkj.png" style="width:64px;height:64px;"> </a> <!-- Figma -->
-          <img src="https://imgur.com/EIoj0FU.png" style="width:64px;height:64px;"> </a> <!-- Microsoft Office -->
+          <img src="https://i.imgur.com/EU4IwLE.png" style="width:64px;height:64px;" alt="Unity" loading="lazy"> <!-- Unity -->
+          <img src="https://i.imgur.com/R9I1SYU.png" style="width:64px;height:64px;" alt="VSC" loading="lazy"> <!-- VSC -->
+          <img src="https://i.imgur.com/S7u7AZ7.png" style="width:64px;height:64px;" alt="C#" loading="lazy"> <!-- C# -->
+          <img src="https://imgur.com/vNSnBx7.png" style="width:64px;height:64px;" alt="Github" loading="lazy"> <!-- Github -->
+          <img src="https://i.imgur.com/pThdt3V.png" style="width:64px;height:64px;" alt="Maya" loading="lazy"> <!-- Maya -->
+          <img src="https://i.imgur.com/NisrTpG.png" style="width:64px;height:64px;" alt="SP" loading="lazy"> <!-- SP -->
+          <img src="https://i.imgur.com/Te1XlLY.png" style="width:64px;height:64px;" alt="ZBrush" loading="lazy"> <!-- ZBrush -->
+          <img src="https://i.imgur.com/SnQyzv0.png" style="width:64px;height:64px;" alt="PhotoShop" loading="lazy"> <!-- PhotoShop -->
+          <img src="https://i.imgur.com/wNZZLRz.png" style="width:64px;height:64px;" alt="Premiere Pro" loading="lazy"> <!-- Premiere Pro -->
+          <img src="https://i.imgur.com/7JtX78k.png" style="width:64px;height:64px;" alt="FL Studio" loading="lazy"> <!-- FL Studio -->
+          <img src="https://imgur.com/S64uTkj.png" style="width:64px;height:64px;" alt="Figma" loading="lazy"> <!-- Figma -->
+          <img src="https://imgur.com/EIoj0FU.png" style="width:64px;height:64px;" alt="Microsoft Office" loading="lazy"> <!-- Microsoft Office -->
 
         </nav>
       </div>
@@ -453,7 +465,7 @@
   <div class="tab-content" id="education">
     <div class="card">
       <div class="card-header">
-        <img src="https://i.imgur.com/utx7hrJ.jpeg" alt="iACADEMY Logo" />
+        <img src="https://i.imgur.com/utx7hrJ.jpeg" alt="iACADEMY Logo" loading="lazy"/>
         <div>
           <strong>iACADEMY Makati</strong><br />
           <span>BS in Entertainment and Multimedia Computing, Specialization in Game Development</span>
@@ -471,7 +483,7 @@
 
     <div class="card">
       <div class="card-header">
-        <img src="https://i.imgur.com/PMUlJ82.jpeg" alt="Lourdes Logo" />
+        <img src="https://i.imgur.com/PMUlJ82.jpeg" alt="Lourdes Logo" loading="lazy"/>
         <div>
           <strong>Lourdes School of Mandaluyong</strong><br />
           <span>High School Diploma</span>
@@ -489,7 +501,7 @@
   <div class="tab-content" id="work" style="display: none;">
     <div class="card">
       <div class="card-header">
-        <img src="https://i.imgur.com/8I8GDS6.png" alt="YYM Logo" />
+        <img src="https://i.imgur.com/8I8GDS6.png" alt="YYM Logo" loading="lazy"/>
         <div>
           <strong>Yangyang Mobile</strong><br />
           <span>Game Designer/QA Intern</span>
@@ -624,18 +636,11 @@
 
     <h2>Contact Me</h2>
   <p>
-    lorenzovaleda01@gmail.com <br> 09690377431
+    <a href="tel:+639690377431">09690377431</a>
+    <a href="mailto:lorenzovaleda01@gmail.com">lorenzovaleda01@gmail.com</a>
   </p>
 </footer>
 
 
 </body>
 </html>
-
-
-
-
-
-
-
-
