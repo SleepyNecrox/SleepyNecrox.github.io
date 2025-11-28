@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ant Colony Defense | Project Breakdown</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding-bottom: 4rem;
+    }
+
+    h1, h2 {
+      color: #ffffff;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .project-header {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+
+    .cover-art {
+      display: block;
+      margin: 1rem auto 1rem auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.5);
+      margin-bottom: 3rem;
+    }
+
+    a {
+      color: #4ea1ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .play-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #f1f1f1;
+      background-color: #661313;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .play-button:hover {
+      background-color: #490e0e;
+    }
+
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .screenshot-grid img,
+    .screenshot-grid video {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      font-weight: bold;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .project-header {
+      margin-bottom: 2rem;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #555;
+      border-radius: 8px;
+      border: 2px solid #1a1a1a;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #888;
+    }
+
+    .meta {
+      font-size: 0.95rem;
+      color: #bbb;
+      margin-top: -0.5rem;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="project-header">
+      <h1>Ant Colony Defense (2024)</h1>
+      <p class="meta">5 Developers • Unity • Multiplayer Tower Defense • Mobile and PC • Developed in 10 days</p>
+      <img class="cover-art" src="https://imgur.com/HpFTExF.png" alt="Ant Colony Defense Cover Art">
+      <a class="play-button" href="https://sleepynecrox.itch.io/ant-colony-defense" target="_blank">🎮 PLAY THE GAME ON ITCH</a>
+    </div>
+
+    <div class="section">
+      <h2>Project Description</h2>
+      <p>
+        Ant Colony Defense is a 2.5D Tower Defense game where you play as a Queen Ant controlling your subjects to defend your ant hill. 
+        Place down ant units to defend your base from incoming enemy colony attacks.
+        The game takes place at some human’s poorly maintained garden. Their inability to watch over it allowed ant colonies to form,
+        which eventually got to the extent that they began fighting for territory within it
+        <br><br>
+        Attacking ants will use pathfinding to find the best way to reach the ant hill and attack whoever is in their way.
+        Defending ants will cycle through states depending on how close the invaders are to them and will react accordingly.
+        <br><br>
+        Inspired by games such as Clash Royale, Plants vs Zombies, and Battle Cats!
+
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Screenshots</h2>
+      <div class="screenshot-grid">
+        <img src="https://imgur.com/Bu5kfRA.png" alt="Ant 1">
+        <img src="https://imgur.com/0EJU9t2.png" alt="Ant 2">
+        <img src="https://imgur.com/aWpY7Zo.png" alt="Ant 3">
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Role & Contributions</h2>
+      <ul>
+        <li>Developed all systems which include Multiplayer (Photon), AI (Pathfinding and State Machines), Gold, and Upgrades</li>
+        <li>Designed and implemented all UI which include menus, lobby, and player interface (Cards, Upgrades, and Gold)</li>
+        <li>Handled balancing, playtesting, and feedback</li>
+      </ul>
+    </div>
+
+    <a class="back-link" href="index.html">← Back to Portfolio</a>
+  </div>
+</body>
+</html>
